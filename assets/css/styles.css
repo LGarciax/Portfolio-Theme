@@ -120,7 +120,7 @@ main{
     min-height: 100px;
     max-height: 300px;
     width: auto;
-    backdrop-filter: drop-shadow(var(rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;));
+    backdrop-filter: drop-shadow(var(--shadow));
     
   }
 
@@ -166,8 +166,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: -20px;
+    margin-top: 20px;
+    margin-bottom: -40px;
     background-color: var(--accent-color);
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -229,80 +229,149 @@ main{
 }
 
 .Banner{
-    height: fit-content;
+    height: 60dvh;
+    width: 80dvw;
+    box-shadow: var(--shadow);
+    border-radius: .9375rem;
+    margin-bottom: .9375rem;
+    background-color: var(--background-section);
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/img/Computer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+    
+   
 }
 
-.Banner h1{
+.banner-text{
+    
+    padding: .9375rem;
+    width: 50%;;
+    height: fit-content;
+
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px) brightness(90%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px  solid rgba(108, 108, 108, 0.5);
+    
+}
+
+.banner-text h1{
     font-size: 3dvw;
     font-weight: 500;
-    width: fit-content;
-    letter-spacing: 5px;
-    backdrop-filter: blur(2px) brightness(98%);
+    letter-spacing: .3125rem;
+    text-align: center;
+    margin-bottom: .3125rem;
+    text-transform: uppercase;
+    display: inline;
+    
+    
         
 }
 
-.Destaque{
-    
-    text-shadow: 0 0 5px #fff,
+
     
     
-    0 0 40px #0ff,
-    0 0 80px #0ff;
+
+#two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    letter-spacing: .3125rem;
     
+  }
+  
+  .box {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .box::before {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 10px;
+    position: absolute;
+    /*background: linear-gradient(180deg, var(--background-section), rgba(255, 142, 113, 0));*/
+  }
+  .box::after {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 10px;
+    position: absolute;
+    /*background: linear-gradient(180deg, rgba(255, 142, 113, 0), var(--background-section));
+  */}
+  
+  .banner-list {
+    float: right;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: scrollUp 6s ease-in-out infinite normal;
+            animation: scrollUp 6s ease-in-out infinite normal;
+  }
+  .banner-list li {
+    opacity: 1;
+    height: 20px;
+    padding: 10px 10px;
+    list-style: none;
     
-}
+  }
+  
+  @-webkit-keyframes scrollUp {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-80%);
+              transform: translateY(-80%);
+    }
+  }
+  
+  @keyframes scrollUp {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-80%);
+              transform: translateY(-80%);
+    }
+  }
+
+  .line-banner {
+    width: 40%;
+    height: .1875rem;
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    margin: 1.25rem auto 1.25rem  auto;
+    filter: brightness(120%);
+    
+  }
+
+  .banner-sub{
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    letter-spacing: .3125rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
 
 
 /* background-color: var(--background-section);*/
-
-/* test */
-
-
-.Fill {
-    position: absolute;
-    bottom: 0; /* Start from the bottom of the sidebar */
-    left: 0;
-    width: 100%;
-    height: 0px; /* Adjusted height for sidebar */
-     /* You can set this to any desired color */
-    z-index: -1;
-    
-    
-}
-
-.Fill::before,
-.Fill::after {
-    content: '';
-    position: absolute;
-    width: 150vw;
-    height: 600vw;
-    top: -65vw;
-    left: 150%;
-    transform: translate(-25%, -50%);
-}
-
-.Fill::before {
-    border-radius: 44%;
-    background: var(--side-background-color);
-    animation: Fill 8s ease infinite;
-    animation-direction: alternate;
-}
-
-.Fill::after {
-    border-radius: 44%;
-    background: var(--accent-color);
-    animation: Fill 15s ease infinite;
-    animation-direction: alternate;
-}
-
-@keyframes Fill {
-    0% {
-        transform: translate(-50%, -75%) rotate(90deg);
-    }
-
-    100% {
-        transform: translate(-50%, -75%) rotate(270deg);
-    }
-}
-
-  /* */
