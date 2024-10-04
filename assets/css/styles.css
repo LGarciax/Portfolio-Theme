@@ -237,7 +237,7 @@ main{
     background-color: var(--background-section);
     display: flex;
     justify-content: center;
-    background-image: url(./assets/img/Computer.jpg);
+    background-image: url(/assets/img/Computer.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
