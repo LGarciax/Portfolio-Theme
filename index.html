@@ -31,16 +31,16 @@
                         <div class="line"></div>
                         <div class="icons">
                             <ul style="display: flex;">
-                                <a href="https://www.github.com/LGarciax"><li> <img src="./assets/img/github-mark-white.svg" alt=""> </li></a>
-                               <a href="https://discord.com/invite/kTfQeTX4"><li><img src="./assets/img/discord-mark-white.svg" alt=""></li></a>
-                                <a href="https://bsky.app/profile/lgarcia.bsky.social"><li><img src="./assets/img/bluesky_media_kit_logo_svgs.svg" alt=""></li></a>
+                                <a href="https://www.github.com/LGarciax" target="_blank"><li> <img src="./assets/img/github-mark-white.svg" alt=""> </li></a>
+                               <a href="https://discord.com/invite/kTfQeTX4" target="_blank"><li><img src="./assets/img/discord-mark-white.svg" alt=""></li></a>
+                                <a href="https://bsky.app/profile/lgarcia.bsky.social" target="_blank"><li><img src="./assets/img/bluesky_media_kit_logo_svgs.svg" alt=""></li></a>
                             </ul>
                         </div>
                         <div class="line"></div>
                         <div class="Links-Page">
                             <ul>
-                                <a href=""><li>Home</li></a>
-                                <a href=""><li>Portfolio</li></a>
+                                <a href="https://luangarcia.dev.br"><li>Home</li></a>
+                                <a href="https://github.com/LGarciax?tab=repositories" target="_blank"><li>Portfolio</li></a>
                                 <a href=""><li>Blog</li></a>
                             </ul>
                         </div>
@@ -83,6 +83,48 @@
         <div class="portfolio-container">
             <h1>Portfolio</h1>
             <div class="portfolio">
+                
+                    <div class="carousel-view">
+                      <button id="prev-btn" class="prev-btn">
+                       <div class="botao"><img src="/assets/img/arrow-left.png" alt=""></div>
+                      </button>
+                      
+                       <div id="item-list" class="item-list">
+                           
+                            <div id="item" class="item">
+                                
+                                <div class="port-img"><img src="/assets/img/Academia.png" alt=""></div>
+                               
+                                <div class="port-text">
+                                    <h4>Tema: Academia de Artes Marciais</h4>
+                                    <div class="detalhe-texto"></div>
+                                    <p> Projeto para a aula de Programação Web, realizado em grupo para nota da 1ª metade do semestre. visando verificar competencias em HTML e CSS basico.</p>
+                                </div>
+                            
+                            </div>
+
+                            <div id="item" class="item">
+                                
+                                <div class="port-img"><img src="/assets/img/Main-Site.png" alt=""></div>
+                               
+                                <div class="port-text">
+                                    <h4>Tema: Site Pessoal</h4>
+                                    <div class="detalhe-texto"></div>
+                                    <p> Um tema basico desenvolvido para meu site portfolio pessoal. Design desenvolvido em busca de ampliar minhas capacidades tecnicas.</p>
+                                </div>
+                            
+                            </div>
+                        
+                            <div id="item" class="item"></div>
+
+                        
+                        </div>
+                      <button id="next-btn" class="next-btn">
+                        <div class="botao"><img src="/assets/img/arrow-right.png" alt=""></div>
+                          </button>
+                    </div>
+                
+
          </div>
 
 
@@ -114,11 +156,6 @@
 
     </main>
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript" src="/assets/js/slick-init.js"></script>
-
- 
+ <script src="./assets/js/carousel.js"></script>
 </body>
 </html>
