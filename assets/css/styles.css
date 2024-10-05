@@ -59,7 +59,7 @@ body{
 
 main{
     display: flex;
-    height: 100vh;
+    height: fit-content;
     
 }
 
@@ -68,15 +68,21 @@ main{
 .sidebar{
     
     width: 20dvw;
-    height: 105vh;
+    min-height: 100%;
+    
+    background-position-y: -700px;
+    background-position-x: center;
     min-width: 15.625rem;
-    background-position-y: 1.875rem;
-    background-position: center;
-    background-size: cover;
+    
+    
+    
     position: relative;
     overflow: hidden;
+    background-image: url(/assets/img/opa.webp);
+   
    
 }
+
 
 .account-container {
     display: flex;
@@ -101,7 +107,7 @@ main{
     border: .0625rem  solid rgba(108, 108, 108, 0.5);
     position: fixed;
     margin: auto;
-    
+    z-index: 10;
     
     
   }
@@ -220,12 +226,29 @@ main{
     filter: brightness(80%);
   }
 
+/* Especial */
+
+.detalhe-especial{
+  
+  min-height: 50%;
+  height: 1850px;
+  margin: auto 15px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  padding: 0px 2px;
+  filter: brightness(120%);
+  box-shadow: var(--shadow);
+  
+}
+
+
 
 /* Content */
 
 .Container-Main{
     width: 100%;
-    margin: 1.25rem
+    margin: 5px;
+    
 }
 
 .Banner{
@@ -290,6 +313,16 @@ main{
     /*rgb(36, 185, 185,*/
 }
 
+.email {
+  background-color: var(--accent-color);
+  padding: .3125rem .625rem;
+  border-radius: 10px;
+  margin-top: .625rem;
+}
+
+.email:hover{
+  filter: brightness(80%);
+}
     
     
 
@@ -404,7 +437,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    background-image: url(/assets/img/pexels-egorkomarov-13003485.jpg);
+    background-image: url(/assets/img/background-portfolio.webp);
     background-size: cover;
     background-position: center;
     
@@ -501,12 +534,26 @@ cursor: pointer;
 scroll-snap-align: center;
 min-width: 31.25rem;
 height: 31.25rem;
+width: 31.25rem;
+min-width: 31.25rem;
 box-shadow: rgba(0, 0, 0, 0.4) 0rem .125rem .25rem, rgba(0, 0, 0, 0.3) 0rem .4375rem .8125rem -0.1875rem, rgba(0, 0, 0, 0.2) 0rem -0.1875rem 0rem inset;
 border-radius:.5rem;
 display: flex;
 flex-direction: column;
+scale: 0.8;
+transition: 300ms;
+}
 
+.item:hover{
 
+  scale: 1;
+  
+
+}
+
+.carr-a{
+  text-decoration: none;
+  color: var(--text-color)
 }
 
 .port-img{
@@ -606,14 +653,19 @@ flex-direction: column;
     box-shadow: var(--shadow);
     border-radius: 15px;
     margin-bottom: 15px;
-    background-color: var(--background-section);
+    background-image: url(/assets/img/background-blog.webp);
+    
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    
    
 }
 
-.Blog-container h1{
+
+
+.titulo-blog{
     font-size: 64px;
     transform: translateY(45%);
     letter-spacing: 5px;
@@ -624,3 +676,30 @@ flex-direction: column;
     display: inline-block
     
 }
+
+.Construcao{
+
+  padding: 5%;
+  width: fit-content;
+  backdrop-filter: blur(15px);
+  border: .0625rem  solid rgba(108, 108, 108, 0.5);
+  border-radius: 10px;
+
+}
+
+.Construcao h1{
+  font-size: 64px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  
+  text-shadow: .25rem .1875rem .4375rem rgba(255,255,255,0.3);
+  backdrop-filter: brightness(90%);
+  display: inline-block
+}
+
+.footer{
+  height: 10vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+
