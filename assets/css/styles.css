@@ -229,7 +229,8 @@ main{
 }
 
 .Banner{
-    height: 60dvh;
+    height: fit-content;
+    min-height: 60dvh;
     width: 80dvw;
     box-shadow: var(--shadow);
     border-radius: .9375rem;
@@ -250,9 +251,9 @@ main{
 .banner-text{
     
     padding: .9375rem;
-    width: 50%;;
+    margin: .9375rem;
+    width: 40%;
     height: fit-content;
-
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px) brightness(90%);
@@ -265,17 +266,29 @@ main{
 
 .banner-text h1{
     font-size: 3dvw;
-    font-weight: 500;
+    font-weight: 800;
     letter-spacing: .3125rem;
     text-align: center;
     margin-bottom: .3125rem;
     text-transform: uppercase;
-    display: inline;
+    display: inline;    
     
     
         
 }
 
+.Destaque {
+     color: var(--accent-color);
+     filter:brightness(130%);
+     
+     /*text-shadow: rgba(43,217,217,0.9) 0px 0px 14px;*/
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    
+
+    /*rgb(36, 185, 185,*/
+}
 
     
     
@@ -363,7 +376,7 @@ main{
   }
 
   .banner-sub{
-    text-align: justify;
+    text-align: center;
     width: 50%;
     margin: auto;
     letter-spacing: .3125rem;
@@ -372,6 +385,66 @@ main{
     line-height: 1.5rem;
   }
 
+/* Portfolio */
 
 
-/* background-color: var(--background-section);*/
+
+.portfolio{
+    background-color: var(--background-section);
+    border-radius: .9375rem;
+    height: fit-content;
+    min-height: 60dvh;
+    width: 80dvw;
+    box-shadow: var(--shadow);
+    border-radius: .9375rem;
+    margin-bottom: .9375rem;
+    background-color: var(--background-section);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portfolio-container h1{
+    font-size: 4rem;
+    transform: translateY(45%);
+    letter-spacing: .3125rem;
+    font-weight: 300;
+    margin-left: 3.125rem;
+    text-shadow: 4px 3px 7px rgba(255,255,255,0.3);
+    backdrop-filter: brightness(90%);
+    display: inline-block
+    
+}
+
+
+
+/* Blog */
+
+.Blog{
+    background-color: var(--background-section);
+    border-radius: .9375rem;
+    height: fit-content;
+    min-height: 60dvh;
+    width: 80dvw;
+    box-shadow: var(--shadow);
+    border-radius: .9375rem;
+    margin-bottom: .9375rem;
+    background-color: var(--background-section);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Blog-container h1{
+    font-size: 4rem;
+    transform: translateY(45%);
+    letter-spacing: .3125rem;
+    font-weight: 300;
+    margin-left: 3.125rem;
+    text-shadow: 4px 3px 7px rgba(255,255,255,0.3);
+    backdrop-filter: brightness(90%);
+    display: inline-block
+    
+}
