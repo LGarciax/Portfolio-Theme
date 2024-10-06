@@ -63,6 +63,10 @@ main{
     
 }
 
+.menu{ display: none;}
+
+
+
 /* side */
 
 .sidebar{
@@ -426,10 +430,12 @@ main{
 
 .portfolio{
     
+
+    width: 80dvw;
     border-radius: 15px;
     height: fit-content;
     
-    width: 80dvw;
+    
     box-shadow: var(--shadow);
     border-radius: 15px;
     margin-bottom: 15px;
